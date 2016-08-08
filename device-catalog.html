@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Девайс</title>
+</head>
+	<body>
+		<div class="page">
+
+			<header class="header-main">
+				<div class="logo-name">
+					<a href="#" class="logo-pic">
+						<img src="#" width="#" height="#" alt="pic">
+					</a>
+				</div>
+				<div class="header-top">
+					<div class="search">
+						<input class="search_icon" type="submit">
+						<input class="search-field" type="search" placeholder="поиск по сайту">
+					</div>
+					<div class="menu-top">
+						<nav class="menu-top__items">
+							<div class="entry">
+							<!-- как быть с реализацией вход\выход? -->
+								<a href="#" class="menu-top__links">Валентин Петухов <span class="pseudo-text">Выйти</span></a>
+							</div>
+							<div class="compare">
+								<a href="#" class="menu-top__links">сравнить</a>
+							</div>
+							<div class="junk">
+								<a href="#" class="menu-top__links">корзина</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<nav class="menu-bottom__items">
+						<div class="goods">
+							<a href="#" class="menu-bottom__links">каталог товаров</a>
+						</div>
+						<div class="delivery">
+							<a href="#" class="menu-bottom__links">доставка</a>
+						</div>
+						<div class="guarantee">
+							<a href="#" class="menu-bottom__links">гарантия</a>
+						</div>
+						<div class="contacts">
+							<a href="#" class="menu-bottom__links">контакты</a>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<main class="main-container">
+
+				<nav class="nav-panel">
+					<h1 class="title-main"> Моноподы для селфи</h1>
+					<div class="nav-items">
+						<a href="#" class="nav-items__style">Главная</a>
+						<a href="#" class="nav-items__style">Каталог товаров</a>
+						<a href="#" class="nav-items__style">Моноподы для селфи</a>
+					</div>
+				</nav>
+				<div class="sort-panel">
+					<div class="sort-filter-title">
+						<span class="sort-panel__title">Фильтр:</span>
+					</div>
+					<div class="sort-manage-panel">
+						<span class="sort-panel__title">Сортировка:</span>
+						<a href="#" class="sort-items">По цене</a>
+						<a href="#" class="sort-items">По типу</a>
+						<a href="#" class="sort-items">По популярности</a>
+						<div class="triangle-btn"></div>
+					</div>
+				</div>
+
+				<asid class="filter-bar">
+
+					<div class="cost-feature">
+						<form action="#" method="post" class="filter-form">
+							<span class="filter-title">Стоимость:<br></span>
+							<input class="cost-line" type="range" step="100" min="0" max="100000" value="5000">
+						</form>
+					</div>
+
+					<div class="color-feature">
+						<form action="#" method="post" class="filter-form">
+							<span class="filter-title">Цвет<br></span>
+							<label class="filter-input">								
+							<input class="color-line" type="checkbox" checked>Черный
+							</label>
+
+							<label class="filter-input">								
+							<input class="color-line" type="checkbox">Белый
+							</label>
+
+							<label class="filter-input">								
+							<input class="color-line" type="checkbox" checked>Синий
+							</label>
+
+							<label class="filter-input">								
+							<input class="color-line" type="checkbox" checked>Красный
+							</label>
+
+							<label class="filter-input">								
+							<input class="color-line" type="checkbox">Розовый
+							</label>
+						</form>
+					</div>
+					<div class="bluetooth-feature">
+						<form action="#" method="post" class="filter-form">
+							<label class="filter-input">
+								<input class="bluetooth-line" type="radio" checked>Есть
+							</label>
+							<label class="filter-input">
+								<input class="bluetooth-line" type="radio">Нет
+							</label>
+						</form>
+					</div>
+					<b class="info-links"><a href="#">показать</a></b>
+				</asid>
+				<div class="gallery-container">
+					<div class="gallery-content">
+
+						<div class="img-items">
+							<img src="img/test.svg" width="320" height="180" alt="pic">
+							<div class="img-stand">
+								<div class="img-caption">Любительская селфи-палка</div>
+								<div class="img-price">500 руб.</div>	
+							</div>
+						</div>
+
+						<div class="img-items">
+							<img src="img/test.svg" width="320" height="180" alt="pic">
+							<div class="img-stand">
+								<div class="img-caption">Профессиональная селфи-палка</div>
+								<div class="img-price">1 500 руб.</div>	
+							</div>
+						</div>
+
+						<div class="img-items">
+							<img src="img/test.svg" width="320" height="180" alt="pic">
+							<div class="img-stand">
+								<div class="img-caption">Непотопляемая селфи-палка</div>
+								<div class="img-price">2 500 руб.</div>	
+							</div>
+						</div>
+
+						<div class="img-items">
+							<img src="img/test.svg" width="320" height="180" alt="pic">
+							<div class="img-stand">
+								<div class="img-caption">Селфи-палка следуй за мной</div>
+								<div class="img-price">4 900 руб.</div>	
+							</div>
+						</div>
+					</div>
+					<div class="pagination">
+						<div class="page-items">
+							<a class="page-text">назад</a>
+						</div>
+
+						<div class="page-items">
+							<a class="page-text">1</a>
+							<a class="page-text">2</a>
+							<a class="page-text">3</a>
+						</div>
+
+						<div class="page-items">
+							<a class="page-text">вперёд</a>
+						</div>
+					</div>
+				</div>
+
+
+			</main>
+
+			<footer class="footer-main">
+				<div class="footer-logo">
+					<div class="logo-name">
+						<a href="#" class="logo-pic">
+							<img src="#" width="#" height="#" alt="pic">
+						</a>
+					</div>
+					<!-- по-моему, тел должен быть блоке с адресом.мб в макете поехало немного? -->
+					<p class="text">г.Москва ул.Строителей,15<br>
+					Тел.:+7(495)495-95-95	
+					</p>
+				</div>
+				<div class="footer-nav">
+					<nav class="nav-items">
+						<a href="#" class="nav-style">Доставка</a>
+						<a href="#" class="nav-style">Гарантия</a>
+						<a href="#" class="nav-style">Контакты</a>
+					</nav>
+				</div>
+				<div class="footer-menu">
+					<nav class="menu-top__items">
+						<div class="entry">
+							<a href="#" class="menu-top__links">войти</a>
+						</div>
+						<div class="compare">
+							<a href="#" class="menu-top__links">сравнить</a>
+						</div>
+						<div class="junk">
+							<a href="#" class="menu-top__links">корзина</a>
+						</div>
+					</nav>
+				</div>
+				<div class="footer-icons">
+					<div class="social-icons">
+						<div class="icon_1"></div>
+						<div class="icon_2"></div>
+						<div class="icon_3"></div>
+					</div>
+					<div class="academy-icon">
+						<div class="html-icon"></div>
+					</div>
+				</div>	
+			</footer>
+		</div>
+	</body>
+</html>
+
