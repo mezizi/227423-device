@@ -9,51 +9,55 @@
 		<div class="page">
 
 			<header class="header-main">
-				<div class="logo-name">
-					<a href="#" class="logo-title">
-						<span class="logo-name">devive</span>
-					</a>
-				</div>
-				<div class="header-top">
-					<div class="search">
-						<input class="search_icon" type="submit">
-						<input class="search-field" type="search" placeholder="поиск по сайту">
+				<div class="header-page">
+					<div class="header-top__container">
+						<div class="header-top">
+							<div class="search">
+								<input class="search-field" type="search" placeholder="поиск по сайту">
+							</div>
+							<div class="menu-top">
+								<nav class="menu-top__items">
+									<ul class="menu-list">
+										<li class="menu-items__style entry">
+											<a href="#" class="menu-top__links">войти</a>
+										</li>
+										<li class="menu-items__style compare">
+											<a href="#" class="menu-top__links">сравнить</a>
+										</li>
+										<li class="menu-items__style junk">
+											<a href="#" class="menu-top__links">корзина</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
-					<div class="menu-top">
-						<nav class="menu-top__items">
-							<ul>
-								<li class="entry">
-									<a href="#" class="menu-top__links">войти</a>
+					<!-- <div class="logo-name"> -->
+						<a href="#" class="logo-title__link">
+							<h1 class="title-h1">device</h1>
+						</a>
+					<!-- </div> -->
+					<div class="header-bottom">
+						<div class="menu-bottom-item__style goods">
+							<a href="#" class="menu-bottom__links">каталог товаров</a>
+						</div>
+						<nav class="menu-bottom__items">
+							<ul class="menu-list">
+								<li class="menu-bottom-item__style delivery">
+									<a href="#" class="menu-bottom__links">доставка</a>
 								</li>
-								<li class="compare">
-									<a href="#" class="menu-top__links">сравнить</a>
+								<li class="menu-bottom-item__style guarantee">
+									<a href="#" class="menu-bottom__links">гарантия</a>
 								</li>
-								<li class="junk">
-									<a href="#" class="menu-top__links">корзина</a>
+								<li class="menu-bottom-item__style contacts">
+									<a href="#" class="menu-bottom__links">контакты</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 				</div>
-				<div class="header-bottom">
-					<nav class="menu-bottom__items">
-						<ul>
-							<li class="goods">
-								<a href="#" class="menu-bottom__links">каталог товаров</a>
-							</li>
-							<li class="delivery">
-								<a href="#" class="menu-bottom__links">доставка</a>
-							</li>
-							<li class="guarantee">
-								<a href="#" class="menu-bottom__links">гарантия</a>
-							</li>
-							<li class="contacts">
-								<a href="#" class="menu-bottom__links">контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
 			</header>
+
 
 			<main class="main-container">
 				<div class="img-window">
@@ -62,10 +66,7 @@
 					</div>
 					<div class="img-description">
 						<div class="img-title-wrap">
-						<!----------- это h1 или р? -------->
-							<p class="img-title">
-								<b class="#">Делай селфи, как Бен Стиллер!</b>
-							</p>
+							<b class="img-title">Делай селфи,<br> как Бен Стиллер!</b>
 						</div>
 						<div class="img-content">
 							<p class="text">
@@ -75,80 +76,102 @@
 						<div class="info-panel">
 							<b class="info-links"><a href="#">подробнее</a></b>
 							<ul class="info-design">
+							<!-- нужно ли кнопки для слайдера оборачивать в а? -->
 								<li class="info-icons"></li>
 								<li class="info-icons"></li>
 								<li class="info-icons"></li>
 							</ul>
 						</div>
 						<div class="features-panel">
-							<div class="lenghth">
+							<div class="features-box">
 								<span class="features-design">8,5 м</span>
-								<p>Длина палки</p>
+								<p class="text">Длина палки</p>
 							</div>
-							<div class="weight">
+							<div class="features-box">
 								<span class="features-design">5 кг</span>
-								<p>Вес палки</p>
+								<p class="text">Вес палки</p>
 							</div>
-							<div class="material">
+							<div class="features-box">
 								<span class="features-design">Карбон</span>
-								<p>Материал</p>
+								<p class="text">Материал</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="catalog">
 					<div class="catalog-items">
-						<img src="img/mask.png" width="97" height="55" alt="catalog-pic">
-						<span class="catalog-caption">Виртуальная реальность</span>
+						<a href="#" class="catalog-items__link">
+							<img src="img/mask.png" width="97" height="55" alt="catalog-pic">
+							<span class="catalog-caption">Виртуальная реальность</span>
+						</a>
 					</div>
 
 					<div class="catalog-items">
-						<img src="img/monopod.png" width="86" height="117" alt="catalog-pic">
-						<span class="catalog-caption">Моноподы для селфи</span>
+						<a href="#" class="catalog-items__link">
+							<img src="img/monopod.png" width="86" height="117" alt="catalog-pic">
+							<span class="catalog-caption">Моноподы для селфи</span>
+						</a>
 					</div>
 
 					<div class="catalog-items">
-						<img src="img/actionfoto.png" width="71" height="87" alt="catalog-pic">
-						<span class="catalog-caption">Экшн-камеры</span>
+						<a href="#" class="catalog-items__link">
+							<img src="img/actionfoto.png" width="71" height="87" alt="catalog-pic">
+							<span class="catalog-caption">Экшн-камеры</span>
+						</a>
 					</div>
 
 					<div class="catalog-items">
-						<img src="img/bracelet.png" width="107" height="65" alt="catalog-pic">
-						<span class="catalog-caption">Фитнес браслеты</span>
+						<a href="#" class="catalog-items__link">
+							<img src="img/bracelet.png" width="107" height="65" alt="catalog-pic">
+							<span class="catalog-caption">Фитнес браслеты</span>
+						</a>
 					</div>
 
 					<div class="catalog-items">
-						<img src="img/smartwatch.png" width="56" height="98" alt="catalog-pic">
-						<span class="catalog-caption">Умные часы</span>
+						<a href="#" class="catalog-items__link">
+							<img src="img/smartwatch.png" width="56" height="98" alt="catalog-pic">
+							<span class="catalog-caption">Умные часы</span>
+						</a>
 					</div>
 
 					<div class="catalog-items">
-						<img src="img/quatro.png" width="132" height="69" alt="catalog-pic">
-						<span class="catalog-caption">Квадрокоптеры</span>
+						<a href="#" class="catalog-items__link">
+							<img src="img/quatro.png" width="132" height="69" alt="catalog-pic">
+							<span class="catalog-caption">Квадрокоптеры</span>
+						</a>
 					</div>
 				</div>
-				<div class="service-container">
-					<div class="service">
-						<ul class="service-design">
-						<!-- Это должно оборачиваться в тег а?? -->
-							<li class="service-style">
-								<a href="#" class="service-items">доставка</a>
-							</li>
-							<li class="service-style">
-								<a href="#" class="service-items">гарантия</a>
-							</li>
-							<li class="service-style">
-								<a href="#" class="service-items">кредит</a>
-							</li>
-						</ul>
-					</div>
-					<div class="service-description">
-						<h2 class="title">Доставка</h2>
-						<p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимя его на ваш этаж.
+			</main>
+		</div>
+
+		<div class="service-container">
+			<div class="page service-page">
+				<div class="service">
+					<ul class="service-design">
+					<!-- Это должно оборачиваться в тег а?? -->
+						<li class="service-style">
+							<a href="#" class="service__links">доставка</a>
+						</li>
+						<li class="service-style">
+							<a href="#" class="service__links">гарантия</a>
+						</li>
+						<li class="service-style">
+							<a href="#" class="service__links">кредит</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-description">
+					<h2 class="title-h2">Доставка</h2>
+					<div class="text-top-wrap">
+						<p class="text">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимя его на ваш этаж.
 						</p>
-						<div class="man-img"></div>
 					</div>
 				</div>
+				<div class="man-img"></div>
+			</div>
+		</div>
+		<div class="page">
+			<div class="label-container">
 				<div class="label-panel">
 				<!-- что сделать чтобы не оставлять теги пустыми??? -->
 					<div class="label-pic1"></div>
@@ -156,65 +179,68 @@
 					<div class="label-pic3"></div>
 					<div class="label-pic4"></div>
 				</div>
-				<div class="contact-info">
-					<section class="info-aboutus">
-						<h2 class="title">О нас</h2>
-						<p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-						</p>
-
-						<p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:
-						</p>
-						<ul class="companies">
-							<li class="companies-list">Деловые Линии</li>
-							<li class="companies-list">Автотрейдинг</li>
-							<li class="companies-list">ЖелДорЭкспедиция</li>
-						</ul>
-						<b class="info-links"><a href="#">подробнее о нас</a></b>
-					</section>
-					<section class="info-contacts">
-						<p class="text">Вы можете забрать товар сами, заехав к нам в офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
-						</p>
-						<!-- что использовать для карты? -->
-						<map>
-							<area></area>
-						</map>
-						<b class="info-links"><a href="#">Напишите нам</a></b>
-					</section>
-				</div>
-			</main>
-			<footer class="footer-main">
-				<div class="footer-logo">
-					<div class="logo-name">
-						<a href="#" class="logo-pic">
-							<img src="#" width="#" height="#" alt="pic">
-						</a>
-					</div>
-					<!-- по-моему, тел должен быть блоке с адресом.мб в макете поехало немного? -->
-					<p class="text">г.Москва ул.Строителей,15<br>
-					Тел.:+7(495)495-95-95	
+			</div>
+			<div class="contact-info">
+				<section class="info-aboutus">
+					<h2 class="title-h2">О нас</h2>
+					<p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
 					</p>
+
+					<p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:
+					</p>
+					<ul class="companies">
+						<li class="companies-list">Деловые Линии</li>
+						<li class="companies-list">Автотрейдинг</li>
+						<li class="companies-list">ЖелДорЭкспедиция</li>
+					</ul>
+					<b class="info-links"><a href="#">подробнее о нас</a></b>
+				</section>
+				<section class="info-contacts">
+					<h2 class="title-h2">Контакты</h2>
+					<p class="text">Вы можете забрать товар сами, заехав к нам в офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
+					</p>
+					<!-- что использовать для карты? -->
+					<map>
+						<area></area>
+					</map>
+					<b class="info-links"><a href="#">Напишите нам</a></b>
+				</section>
+			</div>
+		</div>
+		<footer class="footer-main">
+			<div class="page footer-page">
+				<div class="footer-topline">
+					<a href="#" class="logo-title__link">
+						<span class="title-main__logo">device</span>
+					</a>
+					<nav class="menu-top__items">
+						<ul class="menu-list">
+							<li class="menu-items__style entry">
+								<a href="#" class="menu-top__links">войти</a>
+							</li>
+							<li class="menu-items__style compare">
+								<a href="#" class="menu-top__links">сравнить</a>
+							</li>
+							<li class="menu-items__style junk">
+								<a href="#" class="menu-top__links">корзина</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<div class="footer-nav">
+				<div class="footer-middleline">
+					<div class="footer-adress">
+						<p class="text footer-text">г.Москва ул.Строителей,15</p>
+					</div>
 					<nav class="nav-items">
 						<a href="#" class="nav-style">Доставка</a>
 						<a href="#" class="nav-style">Гарантия</a>
 						<a href="#" class="nav-style">Контакты</a>
 					</nav>
+					<div class="footer-tel">
+						<p class="text footer-text">Тел.: +7 (495) 495-95-95</p>
+					</div>
 				</div>
-				<div class="footer-menu">
-					<nav class="menu-top__items">
-						<div class="entry">
-							<a href="#" class="menu-top__links">войти</a>
-						</div>
-						<div class="compare">
-							<a href="#" class="menu-top__links">сравнить</a>
-						</div>
-						<div class="junk">
-							<a href="#" class="menu-top__links">корзина</a>
-						</div>
-					</nav>
-				</div>
-				<div class="footer-icons">
+				<div class="footer-bottomline">
 					<div class="social-icons">
 						<div class="icon_1"></div>
 						<div class="icon_2"></div>
@@ -223,9 +249,9 @@
 					<div class="academy-icon">
 						<div class="html-icon"></div>
 					</div>
-				</div>	
-			</footer>
-		</div>
+				</div>
+			</div>	
+		</footer>
 	</body>
 </html>
 
