@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 	<body>
@@ -11,36 +13,71 @@
 			<header class="header-main">
 				<div class="page-inner">
 					<div class="header-top__container">
+						<a href="#" class="logo-title__link">
+							<h1 class="title-h1">device</h1>
+						</a>
 						<div class="header-top">
 							<div class="search">
 								<input class="search-field" type="search" placeholder="поиск по сайту">
 							</div>
 							<div class="menu-top">
+								<div class="profile-box menu-items__style entry icon_man authorized_profile">
+									<a href="#" class="menu-top__links">Войти</a>
+								</div>
 								<nav class="menu-top__items">
 									<ul class="menu-list">
-										<li class="menu-items__style entry">
-											<a href="#" class="menu-top__links">войти</a>
+										<li class="menu-items__style">
+											<a href="#" class="menu-top__links icon_compare">сравнить</a>
 										</li>
-										<li class="menu-items__style compare">
-											<a href="#" class="menu-top__links">сравнить</a>
-										</li>
-										<li class="menu-items__style junk">
-											<a href="#" class="menu-top__links">корзина</a>
+										<li class="menu-items__style">
+											<a href="#" class="menu-top__links icon_junk">корзина</a>
 										</li>
 									</ul>
 								</nav>
 							</div>
 						</div>
 					</div>
-					<a href="#" class="logo-title__link">
-						<h1 class="title-h1">device</h1>
-					</a>
+					
 					<div class="header-bottom">
-						<div class="menu-bottom-item__style goods">
-							<a href="#" class="menu-bottom__links">каталог товаров</a>
-						</div>
+						<!-- <div class="menu-bottom-item__style goods">
+							<a href="#" class="menu-bottom__links icon_plus">каталог товаров</a>
+							<div class="menu__drop-down">
+								<div class="menu__drop-down-list">
+									<a class="">Виртуальная реальность</a>
+									<a class="">Моноподы для селфи</a>
+									<a class="">Экшн-камеры</a>
+									<a class="">Фитнесс-браслеты</a>
+									<a class="">Умные часы</a>
+									<a class="">Квадрокоптеры</a>
+								</div>
+						</div> -->
 						<nav class="menu-bottom__items">
 							<ul class="menu-list">
+								<li class="menu-bottom-item__style delivery">
+									<a href="#" class="menu-bottom__links drop-menu icon_plus">каталог товаров</a>
+									<div class="menu__drop-down">
+										<ul class="menu__drop-down-list">
+											<li class="menu-drop__items">
+												<a href="#" class="menu-top__links">Виртуальная реальность</a>
+											</li>
+											<li class="menu-drop__items">
+												<a href="#" class="menu-top__links">Моноподы для селфи</a>
+											</li>
+											<li class="menu-drop__items">
+												<a href="#" class="menu-top__links">Экшн-камеры</a>
+											</li>
+											<li class="menu-drop__items">
+												<a href="#" class="menu-top__links">Фитнесс-браслеты</a>
+											</li>
+											<li class="menu-drop__items">
+												<a href="#" class="menu-top__links">Умные часы</a>
+											</li>
+											<li class="menu-drop__items">
+												<a href="#" class="menu-top__links">Квадрокоптеры</a>
+											</li>
+										</ul>
+									</div>
+								</li>
 								<li class="menu-bottom-item__style delivery">
 									<a href="#" class="menu-bottom__links">доставка</a>
 								</li>
@@ -68,16 +105,16 @@
 						</div>
 						<div class="img-content">
 							<p class="text">
-								Самая длинная палка для селфи доступна в нашем магазине.
+								Самая длинная палка для селфи доступна в нашем магазине.<br>
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
 						</div>
 						<div class="info-panel">
-							<b class="info-links"><a href="#">подробнее</a></b>
+							<b class="info-links__background info__background-size"><a href="#" class="info-links info-links__opacity">подробнее</a></b>
 							<ul class="info-design">
-							<!-- нужно ли кнопки для слайдера оборачивать в а? -->
-								<li class="info-icons"></li>
-								<li class="info-icons"></li>
-								<li class="info-icons"></li>
+								<li class="info-icons info-icons__active">icon</li>
+								<li class="info-icons">icon</li>
+								<li class="info-icons">icon</li>
 							</ul>
 						</div>
 						<div class="features-panel">
@@ -99,42 +136,54 @@
 				<div class="catalog">
 					<div class="catalog-items">
 						<a href="#" class="catalog-items__link">
-							<img src="img/mask.png" width="97" height="55" alt="catalog-pic">
+							<div class="catalog-items__background">
+								<img class="catalog-pic" src="img/mask.png" width="97" height="55" alt="catalog-pic">
+							</div>
 							<span class="catalog-caption">Виртуальная реальность</span>
 						</a>
 					</div>
 
 					<div class="catalog-items">
 						<a href="#" class="catalog-items__link">
-							<img src="img/monopod.png" width="86" height="117" alt="catalog-pic">
+							<div class="catalog-items__background">
+								<img class="catalog-pic" src="img/monopod.png" width="86" height="117" alt="catalog-pic">
+							</div>
 							<span class="catalog-caption">Моноподы для селфи</span>
 						</a>
 					</div>
 
 					<div class="catalog-items">
 						<a href="#" class="catalog-items__link">
-							<img src="img/actionfoto.png" width="71" height="87" alt="catalog-pic">
+							<div class="catalog-items__background">
+								<img class="catalog-pic" src="img/actionfoto.png" width="71" height="87" alt="catalog-pic">
+							</div>
 							<span class="catalog-caption">Экшн-камеры</span>
 						</a>
 					</div>
 
 					<div class="catalog-items">
 						<a href="#" class="catalog-items__link">
-							<img src="img/bracelet.png" width="107" height="65" alt="catalog-pic">
+							<div class="catalog-items__background">
+								<img class="catalog-pic" src="img/bracelet.png" width="107" height="65" alt="catalog-pic">
+							</div>
 							<span class="catalog-caption">Фитнес браслеты</span>
 						</a>
 					</div>
 
 					<div class="catalog-items">
 						<a href="#" class="catalog-items__link">
-							<img src="img/smartwatch.png" width="56" height="98" alt="catalog-pic">
+							<div class="catalog-items__background">
+								<img class="catalog-pic" src="img/smartwatch.png" width="56" height="98" alt="catalog-pic">
+							</div>
 							<span class="catalog-caption">Умные часы</span>
 						</a>
 					</div>
 
 					<div class="catalog-items">
 						<a href="#" class="catalog-items__link">
-							<img src="img/quatro.png" width="132" height="69" alt="catalog-pic">
+							<div class="catalog-items__background">
+								<img class="catalog-pic" src="img/quatro.png" width="132" height="69" alt="catalog-pic">
+							</div>
 							<span class="catalog-caption">Квадрокоптеры</span>
 						</a>
 					</div>
@@ -146,20 +195,28 @@
 			<div class="page service-page">
 				<div class="service">
 					<ul class="service-design">
-					<!-- Это должно оборачиваться в тег а?? -->
-						<li class="service-style">
-							<a href="#" class="service__links">доставка</a>
+						<li class="service-items"> 
+							<a href="#" class="info-links service-active">
+								<div class="info-links__background service__background-line service__background-size"></div>
+								доставка
+							</a>
 						</li>
-						<li class="service-style">
-							<a href="#" class="service__links">гарантия</a>
+						<li class="service-items"> 
+							<a href="#" class="info-links service-active">
+								<div class="info-links__background service__background-line service__background-size"></div>
+								гарантия
+							</a>
 						</li>
-						<li class="service-style">
-							<a href="#" class="service__links">кредит</a>
+						<li class="service-items">
+							<a href="#" class="info-links service-active">
+								<div class="info-links__background service__background-line service__background-size"></div>
+								кредит
+							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="service-description">
-					<h2 class="title-h2">Доставка</h2>
+					<h2 class="title-h2 service-title__indent">Доставка</h2>
 					<div class="text-top-wrap">
 						<p class="text">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимя его на ваш этаж.
 						</p>
@@ -170,18 +227,15 @@
 		</div>
 		<div class="page">
 			<div class="label-container">
-				<div class="label-panel">
-				<!-- что сделать чтобы не оставлять теги пустыми??? -->
-					<div class="label-pic1"></div>
-					<div class="label-pic2"></div>
-					<div class="label-pic3"></div>
-					<div class="label-pic4"></div>
-				</div>
+				<div class="label pic1">pic</div>
+				<div class="label pic2">pic</div>
+				<div class="label pic3">pic</div>
+				<div class="label pic4">pic</div>
 			</div>
 			<div class="contact-info">
 				<section class="info-aboutus">
-					<h2 class="title-h2">О нас</h2>
-					<p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+					<h2 class="title-h2 title-top-line title-bottom">О нас</h2>
+					<p class="text text-bottom-indent">Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.
 					</p>
 
 					<p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:
@@ -191,17 +245,19 @@
 						<li class="companies-list">Автотрейдинг</li>
 						<li class="companies-list">ЖелДорЭкспедиция</li>
 					</ul>
-					<b class="info-links"><a href="#">подробнее о нас</a></b>
+					<b class="info-links__background contact__background-line contact__background-size"><a href="#" class="info-links info-links__opacity">подробнее о нас</a></b>
 				</section>
 				<section class="info-contacts">
-					<h2 class="title-h2">Контакты</h2>
-					<p class="text">Вы можете забрать товар сами, заехав к нам в офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
+					<h2 class="title-h2 title-top-line title-bottom">Контакты</h2>
+					<p class="text text-bottom-indent">Вы можете забрать товар сами, заехав к нам в офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
 					<!-- что использовать для карты? -->
 					<map>
-						<area></area>
+					<!-- 	<area>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877999!2d37.527429316301564!3d55.687030980535795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1472495003127" width="560" height="223" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</area> -->
 					</map>
-					<b class="info-links"><a href="#">Напишите нам</a></b>
+					<b class="info-links__background contact__background-line contact__background-size"><a href="#" class="info-links info-links__opacity">Напишите нам</a></b>
 				</section>
 			</div>
 		</div>
@@ -209,18 +265,18 @@
 			<div class="page footer-page">
 				<div class="footer-topline">
 					<a href="#" class="logo-title__link">
-						<span class="title-main__logo">device</span>
+						<span class="title-h1 title-h1__footer">device</span>
 					</a>
 					<nav class="menu-top__items">
 						<ul class="menu-list">
-							<li class="menu-items__style entry">
-								<a href="#" class="menu-top__links">войти</a>
+							<li class="menu-items__style">
+								<a href="#" class="menu-top__links footer-menu-top__links man-footer">войти</a>
 							</li>
-							<li class="menu-items__style compare">
-								<a href="#" class="menu-top__links">сравнить</a>
+							<li class="menu-items__style">
+								<a href="#" class="menu-top__links footer-menu-top__links sticks-footer">сравнить</a>
 							</li>
-							<li class="menu-items__style junk">
-								<a href="#" class="menu-top__links">корзина</a>
+							<li class="menu-items__style">
+								<a href="#" class="menu-top__links footer-menu-top__links junk-footer">корзина</a>
 							</li>
 						</ul>
 					</nav>
@@ -229,20 +285,31 @@
 					<div class="footer-adress">
 						<p class="text footer-text">г.Москва ул.Строителей,15</p>
 					</div>
-					<nav class="nav-items">
-						<a href="#" class="nav-style">Доставка</a>
-						<a href="#" class="nav-style">Гарантия</a>
-						<a href="#" class="nav-style">Контакты</a>
-					</nav>
+					<ul class="footer-nav__list">
+						<li class="footer-nav__items">
+							<a href="#" class="footer-nav__links">доставка</a>
+						</li>
+						<li class="footer-nav__items">
+							<a href="#" class="footer-nav__links">гарантия</a>
+						</li>
+						<li class="footer-nav__items">
+							<a href="#" class="footer-nav__links">контакты</a>
+						</li>		
+					</ul>
 					<div class="footer-tel">
 						<p class="text footer-text">Тел.: +7 (495) 495-95-95</p>
 					</div>
 				</div>
 				<div class="footer-bottomline">
-					<div class="social-icons">
-						<div class="icon_1"></div>
-						<div class="icon_2"></div>
-						<div class="icon_3"></div>
+					<div class="footer-pseudo-img">
+						<div class="footer-pseudo-line"></div>
+					</div>
+					<div class="social-content">
+						<!-- <ul class="social-icons"> -->
+							<a class="social-icon icon_fb">facebook</a>
+							<a class="social-icon icon_insta">instagram</a>
+							<a class="social-icon icon_twitter">twitter</a>
+						<!-- </ul> -->
 					</div>
 					<div class="academy-icon">
 						<div class="html-icon"></div>

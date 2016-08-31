@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 	<body>
@@ -11,33 +13,37 @@
 			<header class="header-main header-main__shop">
 				<div class="page-inner">
 					<div class="header-top__container">
+						<div class="test">
+							<a href="#" class="logo-title__link">
+								<h1 class="title-h1">device</h1>
+							</a>
+						</div>
 						<div class="header-top">
 							<div class="search">
 								<input class="search-field" type="search" placeholder="поиск по сайту">
 							</div>
 							<div class="menu-top">
+								<div class="profile-box menu-items__style entry icon_man authorized_profile">
+									<a href="#" class="menu-top__links login-name__indent"> валентин петухов</a> 
+									<a href="#" class="menu-top__links">войти</a>
+								</div>
 								<nav class="menu-top__items">
 									<ul class="menu-list">
-										<li class="menu-items__style entry">
-											<a href="#" class="menu-top__links">войти</a>
-										</li>
 										<li class="menu-items__style compare">
-											<a href="#" class="menu-top__links">сравнить</a>
+											<a href="#" class="menu-top__links icon_compare">сравнить</a>
 										</li>
 										<li class="menu-items__style junk">
-											<a href="#" class="menu-top__links">корзина</a>
+											<a href="#" class="menu-top__links icon_junk">корзина</a>
 										</li>
 									</ul>
 								</nav>
 							</div>
 						</div>
 					</div>
-					<a href="#" class="logo-title__link">
-						<h1 class="title-h1">device</h1>
-					</a>
+			
 					<div class="header-bottom">
 						<div class="menu-bottom-item__style goods">
-							<a href="#" class="menu-bottom__links">каталог товаров</a>
+							<a href="#" class="menu-bottom__links icon_plus">каталог товаров</a>
 						</div>
 						<nav class="menu-bottom__items">
 							<ul class="menu-list">
@@ -57,7 +63,7 @@
 			</header>
 		</div>
 		<main class="main-container">
-			<div class="page-inner">
+			<div class="page-inner page-inner__indent">
 				<nav class="nav-panel">
 					<h1 class="title-main"> Моноподы для селфи</h1>
 					<div class="nav-items">
@@ -70,7 +76,7 @@
 
 			<div class="general-block">
 				<div class="test-block">
-					<div class="sort-panel__wraper">
+					<div class="sort-panel__wraper sort-panel__position">
 						<div class="sort-filter-title">
 							<span class="sort-panel__title">Фильтр:</span>
 						</div>
@@ -80,40 +86,49 @@
 					<div class="sort-panel__wraper">
 						<div class="sort-manage-panel">
 							<span class="sort-panel__title">Сортировка:</span>
-							<a href="#" class="sort-items">По цене</a>
-							<a href="#" class="sort-items">По типу</a>
-							<a href="#" class="sort-items">По популярности</a>
-							<div class="triangle-btn"></div>
+							<ul class="sort-list">
+								<li class="sort-items">
+									<a href="#" class="sort-links">По цене</a>
+								</li>
+								<li class="sort-items">
+									<a href="#" class="sort-links">По типу</a>
+								</li>
+								<li class="sort-items">
+									<a href="#" class="sort-links">По популярности</a>
+								</li>
+								<li class="sort-items  triangle-btn"></li>
+								<li class="sort-items  triangle-btn2"></li>
+							</ul>
+							<!-- <div class=" "></div>
+							<div class=""></div> -->
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			<!-- <div class="sort-panel">
-				<div class="page-main">
-					<div class="sort-panel__wraper">
-						<div class="sort-filter-title">
-							<span class="sort-panel__title">Фильтр:</span>
-						</div>
-						<div class="sort-manage-panel">
-							<span class="sort-panel__title">Сортировка:</span>
-							<a href="#" class="sort-items">По цене</a>
-							<a href="#" class="sort-items">По типу</a>
-							<a href="#" class="sort-items">По популярности</a>
-							<div class="triangle-btn"></div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<div class="general-block">
+			
+			<div class="general-block general-block__none-indent">
 				<div class="aside-inner-block">
 					<div class="aside-wraper">
 						<aside class="filter-bar">
 
 							<div class="cost-feature">
 								<form action="#" method="post" class="filter-form">
-									<span class="filter-title">Стоимость:<br></span>
-									<input class="cost-line" type="range" step="100" min="0" max="100000" value="5000">
+									<div class="range-filter">
+										<span class="filter-title">Стоимость:<br></span>
+										<div class="range-control">
+											<div class="scale">
+												<div style="width:70%;" class="bar"></div>
+											</div>
+											<div class="toggle min-toggle"></div>
+											<div class="toggle max-toggle"></div>
+										</div>
+									
+										<div class="price-control">
+											от<input class="price-min" type="text" step="100" value="0">
+											до<input class="price-max" type="text" step="100" value="5000">
+										</div>
+									</div>
 								</form>
 							</div>
 
@@ -161,15 +176,16 @@
 						<div class="gallery-content">
 
 							<div class="img-items">
-								<img src="img/catalogit1.png" width="360" height="380" alt="pic">
-								<!-- <div class="img-stand"> -->
+								<img  class="img-items__hover"src="img/catalogit1.png" width="360" height="380" alt="pic">
+								<b class="info-links__background info__background-line-size"><a href="#" class="info-links info-links__opacity">в корзину</a></b>
+								<div class="img-stand">
 									<div class="img-caption">Любительская селфи-палка</div>
-									<div class="img-price">500 руб.</div>	
-								<!-- </div> -->
+									<div class="img-price">500 руб.</div>
+								</div>
 							</div>
 
 							<div class="img-items">
-								<img src="img/catalogit2.png" width="360" height="380" alt="pic">
+								<img class="img-items__hover" src="img/catalogit2.png" width="360" height="380" alt="pic">
 								<div class="img-stand">
 									<div class="img-caption">Профессиональная селфи-палка</div>
 									<div class="img-price">1 500 руб.</div>	
@@ -177,7 +193,7 @@
 							</div>
 
 							<div class="img-items">
-								<img src="img/catalogit3.png" width="360" height="380" alt="pic">
+								<img class="img-items__hover" src="img/catalogit3.png" width="360" height="380" alt="pic">
 								<div class="img-stand">
 									<div class="img-caption">Непотопляемая селфи-палка</div>
 									<div class="img-price">2 500 руб.</div>	
@@ -185,29 +201,33 @@
 							</div>
 
 							<div class="img-items">
-								<img src="img/catalogit4.png" width="360" height="380" alt="pic">
+								<img class="img-items__hover" src="img/catalogit4.png" width="360" height="380" alt="pic">
 								<div class="img-stand">
-									<div class="img-caption">Селфи-палка следуй за мной</div>
+									<div class="img-caption">Селфи-палка «Cледуй за мной»</div>
 									<div class="img-price">4 900 руб.</div>	
 								</div>
 							</div>
+
+
 						</div>
 						<div class="pagination">
 							<div class="page-items">
-								<a class="page-text">назад</a>
+								<a class="page-text  page-prev">назад</a>
 							</div>
 
 							<div class="page-items">
-								<a class="page-text">1</a>
-								<a class="page-text">2</a>
-								<a class="page-text">3</a>
+								<nav class="page-list__numbers">
+									<a class="page-text page-numbers__links">1</a>
+									<a class="page-text page-numbers__links">2</a>
+									<a class="page-text page-numbers__links">3</a>
+								</nav>
 							</div>
 
 							<div class="page-items">
-								<a class="page-text">вперёд</a>
+								<a class="page-text page-next">вперёд</a>
 							</div>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 			</div>
 		</main>
@@ -216,19 +236,19 @@
 		<footer class="footer-main">
 			<div class="page footer-page">
 				<div class="footer-topline">
-					<a href="#" class="footer-title__link">
-						<span class="title-main__logo">device</span>
+					<a href="#" class="logo-title__link">
+						<span class="title-h1 title-h1__footer">device</span>
 					</a>
 					<nav class="menu-top__items">
 						<ul class="menu-list">
-							<li class="menu-items__style entry">
-								<a href="#" class="menu-top__links">войти</a>
+							<li class="menu-items__style">
+								<a href="#" class="menu-top__links footer-menu-top__links man-footer">войти</a>
 							</li>
-							<li class="menu-items__style compare">
-								<a href="#" class="menu-top__links">сравнить</a>
+							<li class="menu-items__style">
+								<a href="#" class="menu-top__links footer-menu-top__links sticks-footer">сравнить</a>
 							</li>
-							<li class="menu-items__style junk">
-								<a href="#" class="menu-top__links">корзина</a>
+							<li class="menu-items__style">
+								<a href="#" class="menu-top__links footer-menu-top__links junk-footer">корзина</a>
 							</li>
 						</ul>
 					</nav>
@@ -237,20 +257,31 @@
 					<div class="footer-adress">
 						<p class="text footer-text">г.Москва ул.Строителей,15</p>
 					</div>
-					<nav class="nav-items">
-						<a href="#" class="nav-style">Доставка</a>
-						<a href="#" class="nav-style">Гарантия</a>
-						<a href="#" class="nav-style">Контакты</a>
-					</nav>
+					<ul class="footer-nav__list">
+						<li class="footer-nav__items">
+							<a href="#" class="footer-nav__links">доставка</a>
+						</li>
+						<li class="footer-nav__items">
+							<a href="#" class="footer-nav__links">гарантия</a>
+						</li>
+						<li class="footer-nav__items">
+							<a href="#" class="footer-nav__links">контакты</a>
+						</li>		
+					</ul>
 					<div class="footer-tel">
 						<p class="text footer-text">Тел.: +7 (495) 495-95-95</p>
 					</div>
 				</div>
 				<div class="footer-bottomline">
-					<div class="social-icons">
-						<div class="icon_1"></div>
-						<div class="icon_2"></div>
-						<div class="icon_3"></div>
+					<div class="footer-pseudo-img">
+						<div class="footer-pseudo-line"></div>
+					</div>
+					<div class="social-content">
+						<!-- <ul class="social-icons"> -->
+							<a class="social-icon icon_fb">facebook</a>
+							<a class="social-icon icon_insta">instagram</a>
+							<a class="social-icon icon_twitter">twitter</a>
+						<!-- </ul> -->
 					</div>
 					<div class="academy-icon">
 						<div class="html-icon"></div>
