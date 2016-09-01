@@ -20,7 +20,10 @@
 						</div>
 						<div class="header-top">
 							<div class="search">
-								<input class="search-field" type="search" placeholder="поиск по сайту">
+								<label class="search-field">
+									<span class="search-icon"></span>
+									<input class="search-input" type="search" placeholder="Поиск по сайту">
+								</label>
 							</div>
 							<div class="menu-top">
 								<div class="profile-box menu-items__style entry icon_man authorized_profile">
@@ -64,25 +67,31 @@
 		</div>
 		<main class="main-container">
 			<div class="page-inner page-inner__indent">
-				<nav class="nav-panel">
+				<!-- <div class="breadcrumbs"> -->
 					<h1 class="title-main"> Моноподы для селфи</h1>
-					<div class="nav-items">
-						<a href="#" class="nav-items__style">Главная</a>
-						<a href="#" class="nav-items__style">Каталог товаров</a>
-						<a href="#" class="nav-items__style">Моноподы для селфи</a>
-					</div>
-				</nav>
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-items">
+							<a href="#" class="breadcrumbs-items__style">Главная</a>
+						</li>
+						<li class="breadcrumbs-items">
+							<a href="#" class="breadcrumbs-items__style">Каталог товаров</a>
+						</li>
+						<li class="breadcrumbs-items">
+							<a href="#" class="breadcrumbs-items__style">Моноподы для селфи</a>
+						</li>	
+					</ul>
+				<!-- </div> -->
 			</div>
 
 			<div class="general-block">
-				<div class="test-block">
+				<div class="filter-block">
 					<div class="sort-panel__wraper sort-panel__position">
 						<div class="sort-filter-title">
 							<span class="sort-panel__title">Фильтр:</span>
 						</div>
 					</div>
 				</div>
-				<div class="test-block2">
+				<div class="sort-block">
 					<div class="sort-panel__wraper">
 						<div class="sort-manage-panel">
 							<span class="sort-panel__title">Сортировка:</span>
@@ -99,8 +108,6 @@
 								<li class="sort-items  triangle-btn"></li>
 								<li class="sort-items  triangle-btn2"></li>
 							</ul>
-							<!-- <div class=" "></div>
-							<div class=""></div> -->
 						</div>
 					</div>
 				</div>
@@ -118,15 +125,21 @@
 										<span class="filter-title">Стоимость:<br></span>
 										<div class="range-control">
 											<div class="scale">
-												<div style="width:70%;" class="bar"></div>
+												<div style="width:60%;" class="bar"></div>
 											</div>
-											<div class="toggle min-toggle"></div>
+											<div class="toggle toggle-active min-toggle"></div>
 											<div class="toggle max-toggle"></div>
 										</div>
 									
 										<div class="price-control">
-											от<input class="price-min" type="text" step="100" value="0">
-											до<input class="price-max" type="text" step="100" value="5000">
+											<label class="price-control__style">
+												от
+												<input class="price-min" name="min-price" type="text" step="100" value="0">
+											</label>
+											<label class="price-control__style">
+												до
+												<input class="price-max" name="max-price" type="text" step="100" value="5000">
+											</label>
 										</div>
 									</div>
 								</form>
@@ -136,38 +149,45 @@
 								<form action="#" method="post" class="filter-form">
 									<span class="filter-title">Цвет<br></span>
 									<label class="filter-input">								
-										<input class="color-line" type="checkbox" checked>Черный
+										<input class="color-line" name="filter-checkbox" type="checkbox" checked>
+										<span class="checkbox-indicator"></span>Черный
 									</label>
 
 									<label class="filter-input">								
-										<input class="color-line" type="checkbox">Белый
+										<input class="color-line" name="filter-checkbox" type="checkbox">
+										<span class="checkbox-indicator"></span>Белый
 									</label>
 
 									<label class="filter-input">								
-										<input class="color-line" type="checkbox" checked>Синий
+										<input class="color-line" name="filter-checkbox" type="checkbox" checked>
+										<span class="checkbox-indicator"></span>Синий
 									</label>
 
 									<label class="filter-input">								
-										<input class="color-line" type="checkbox" checked>Красный
+										<input class="color-line" name="filter-checkbox" type="checkbox" checked>
+										<span class="checkbox-indicator"></span>Красный
 									</label>
 
 									<label class="filter-input">								
-										<input class="color-line" type="checkbox">Розовый
+										<input class="color-line" name="filter-checkbox" type="checkbox">
+										<span class="checkbox-indicator"></span>Розовый
 									</label>
 								</form>
 							</div>
 							<div class="bluetooth-feature">
-								<form action="#" method="post" class="filter-form">
+								<form action="#" method="post" class="filter-form form-indent">
 									<span class="filter-title">Bluetooth</span>
 									<label class="filter-input">
-										<input class="bluetooth-line" type="radio" checked>Есть
+										<input class="bluetooth-line" type="radio" checked>
+										<span class="radio-indicator"></span>Есть
 									</label>
 									<label class="filter-input">
-										<input class="bluetooth-line" type="radio">Нет
+										<input class="bluetooth-line" type="radio">
+										<span class="radio-indicator"></span>Нет
 									</label>
 								</form>
 							</div>
-							<b class="info-links"><a href="#">показать</a></b>
+							<b class="info-links__background filter__background-size"><a href="#" class="info-links info-links__opacity">показать</a></b>
 						</aside>
 					</div>
 				</div>
