@@ -326,12 +326,21 @@ input[type="search"]::-webkit-search-results-decoration
 .menu-bottom__items{
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	 
+}
+.menu-bottom-item__style{
+	margin-right: 40px;
+
 }
 
 .menu-bottom-item__style:first-child{
-	margin-right: 40px;
+	margin-right: 265px;
 }
 
+.menu-bottom-item__style:nth-child(3n){
+	margin-right:0;
+
+}
 
 .menu-bottom-item__style:last-child{
 	margin-right:0;
@@ -356,7 +365,7 @@ input[type="search"]::-webkit-search-results-decoration
 }
 .icon_plus{
 	position: relative;
-	padding-right: 35px;
+	padding-right: 30px;
 }
 .icon_plus::after{
 	content: '';
