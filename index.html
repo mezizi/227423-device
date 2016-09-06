@@ -195,7 +195,7 @@
 					</div>
 
 					<div class="slider-controler slider-controler-helicopter">
-						<b class="info-links__background info__background-size"><a href="#" class="info-links info-links__opacity">подробнее</a></b>
+						<button type="button" class="info-links__background info__background-size"><a href="#" class="info-links info-links__opacity">подробнее</a></button>
 						<div class="slider-toggle">
 							<label for="btn-1" class="slider-icons">icon</label>
 							<label for="btn-2" class="slider-icons">icon</label>
@@ -270,22 +270,19 @@
 			<div class="page service-page">
 				<div class="service-design">
 					<label for="delivery-btn" class="service-items"> 
-						<a href="#" class="info-links service-active">
-							<div class="info-links__background service__background-line service__background-size"></div>
+						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
 							доставка
-						</a>
+						</button>
 					</label>
 					<label for="warranty-btn" class="service-items"> 
-						<a href="#" class="info-links service-active">
-							<div class="info-links__background service__background-line service__background-size"></div>
+						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
 							гарантия
-						</a>
+						</button>
 					</label>
 					<label for="credit-btn" class="service-items">
-						<a href="#" class="info-links service-active">
-							<div class="info-links__background service__background-line service__background-size"></div>
+						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
 							кредит
-						</a>
+						</button>
 					</label>
 				</div>
 			<!-- </div> -->
@@ -346,7 +343,7 @@
 						<li class="companies-list">Автотрейдинг</li>
 						<li class="companies-list">ЖелДорЭкспедиция</li>
 					</ul>
-					<b class="info-links__background contact__background-line contact__background-size"><a href="#" class="info-links info-links__opacity">подробнее о нас</a></b>
+					<button type="button" class="info-links__background contact__background-line contact__background-size"><a href="#" class="info-links info-links__opacity">подробнее о нас</a></button>
 				</section>
 				<section class="info-contacts">
 					<h2 class="title-h2 title-top-line title-bottom">Контакты</h2>
@@ -358,7 +355,7 @@
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877999!2d37.527429316301564!3d55.687030980535795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1472495003127" width="560" height="223" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</area> -->
 					</map>
-					<b class="info-links__background contact__background-line contact__background-size"><a href="#" class="info-links info-links__opacity">Напишите нам</a></b>
+					<button type="button" class="info-links__background contact__background-line contact__background-size write-us"><a href="#" class="info-links info-links__opacity">Напишите нам</a></button>
 				</section>
 			</div>
 		</div>
@@ -425,12 +422,12 @@
 				<div class="login-fields">
 					<label class="feedback-fields">
 						Ваше имя:<br>
-						<input class="feedback-inputs" type="text" name="login" plceholder="Представьтесь, пожалуйста">
+						<input class="feedback-inputs" type="text" name="login" value="" plceholder="Представьтесь, пожалуйста">
 						</input>
 					</label>
 					<label class="feedback-fields">
 						Ваш e-mail:<br>
-						<input class="feedback-inputs" type="text" name="password" plceholder="Для отправки ответа">
+						<input class="feedback-inputs" type="text" name="password" value="" plceholder="Для отправки ответа">
 						</input>
 					</label>
 				</div>
@@ -441,8 +438,11 @@
 					</textarea>
 				</label>
 			</form>
-			<b class="info-links__background form__background-size"><a href="#" class="info-links info-links__opacity">отправить</a></b>
+			<button type="submit" class="info-links__background form__background-size"><a href="#" class="info-links info-links__opacity">отправить</a></button>
 		</div>
+		<div class="overlay-model">
+		</div>
+		<script src="js/add.js"></script>
 	</body>
 </html>
 
