@@ -84,20 +84,21 @@
 							</ul>
 						</div>
 					</div>
-					<div class="slider-counter">
-						<p class="slider-number" id="slider-number-1">01</p>
-						<p class="slider-number" id="slider-number-2">02</p>
-						<p class="slider-number" id="slider-number-3">03</p>
-					</div>
+
 				</div>
 			</header>
 
 
 			<main class="main-container">
 				<div class="slider-container">
-				<input class="slider-radio" type="radio" name="toggle" id="btn-1" checked>
-				<input class="slider-radio" type="radio" name="toggle" id="btn-2">
-				<input class="slider-radio" type="radio" name="toggle" id="btn-3">
+					<input class="slider-radio" type="radio" name="toggle" id="btn-1" checked>
+					<input class="slider-radio" type="radio" name="toggle" id="btn-2">
+					<input class="slider-radio" type="radio" name="toggle" id="btn-3">
+					<div class="slider-counter">
+						<p class="slider-number" id="slider-number-1">01</p>
+						<p class="slider-number" id="slider-number-2">02</p>
+						<p class="slider-number" id="slider-number-3">03</p>
+					</div>
 					<div id="slider-1">
 						<div class="slider-content">
 							<div class="slider-img">
@@ -264,31 +265,36 @@
 
 		<div class="service-container">
 			<!-- <div class="service"> -->
-			<input class="slider-checkbox" type="checkbox" name="tog" id="delivery-btn" checked>
-			<input class="slider-checkbox" type="checkbox" name="tog" id="warranty-btn">
-			<input class="slider-checkbox" type="checkbox" name="tog" id="credit-btn">
+			
 			<div class="page service-page">
+				<input class="slider-checkbox" type="checkbox" name="tog" id="delivery-btn" >
+				<input class="slider-checkbox" type="checkbox" name="tog" id="warranty-btn">
+				<input class="slider-checkbox" type="checkbox" name="tog" id="credit-btn">
 				<div class="service-design">
-					<label for="delivery-btn" class="service-items"> 
+					<label for="delivery-btn" class="service-items service-active"> 
+						доставка
 						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
-							доставка
+							
 						</button>
 					</label>
-					<label for="warranty-btn" class="service-items"> 
+					<label for="warranty-btn" class="service-items service-active">
+						гарантия 
 						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
-							гарантия
+							
 						</button>
 					</label>
-					<label for="credit-btn" class="service-items">
+					<label for="credit-btn" class="service-items  service-active">
+						кредит
 						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
-							кредит
+							
 						</button>
 					</label>
 				</div>
 			<!-- </div> -->
-		<!-- </div> -->
-				<div class ="slider-test">
-					<div class="service-slider" id="service-slider-1">
+			<!-- </div> -->
+				<!-- <div class ="slider-test"> -->
+				<div id="service-slider-1">
+					<div class="service-slider">
 						<div class="service-description">
 							<h2 class="title-h2 service-title__indent">Доставка</h2>
 							<div class="text-top-wrap">
@@ -298,8 +304,9 @@
 							<div class="man-img"></div>
 						</div>
 					</div>
-
-					<div class="service-slider" id="service-slider-2">
+				</div>
+				<div id="service-slider-2">
+					<div class="service-slider">
 						<div class="service-description">
 							<h2 class="title-h2 service-title__indent">Гарантия</h2>
 							<div class="text-top-wrap">
@@ -309,18 +316,19 @@
 							<div class="warranty-img"></div>
 						</div>
 					</div>
+				</div>
 
-					<div class="service-slider" id="service-slider-3">
-						<div class="service-description">
-							<h2 class="title-h2 service-title__indent">Кредит</h2>
-							<div class="text-top-wrap">
-								<p class="text">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.
-								</p>
-							</div>
-							<div class="credit-img"></div>
+				<div class="service-slider" id="service-slider-3">
+					<div class="service-description">
+						<h2 class="title-h2 service-title__indent">Кредит</h2>
+						<div class="text-top-wrap">
+							<p class="text">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.
+							</p>
 						</div>
+						<div class="credit-img"></div>
 					</div>
 				</div>
+				<!-- </div> -->
 			</div>
 		</div>
 		<div class="page">

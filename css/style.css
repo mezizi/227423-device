@@ -426,7 +426,7 @@ input[type="search"]::-webkit-search-results-decoration
 	/*bottom: -58px;
 	right:-15px;*/
 	top:-120px;
-	right: -50px;
+	right:55px;
 }
 .slider-counter::before{
 	content: '';
@@ -457,17 +457,15 @@ input[type="search"]::-webkit-search-results-decoration
 	display: none;
 }
 
+#btn-1:checked ~ .slider-counter::before{
+	left:-340px; 
+}
+
 #btn-1:checked ~ .slider-counter #slider-number-1,
 #btn-2:checked ~ .slider-counter #slider-number-2,
 #btn-3:checked ~ .slider-counter #slider-number-3{
 	display: block;
 }
-
-
-
-
-
-
 
 
 
@@ -736,23 +734,24 @@ input[type="search"]::-webkit-search-results-decoration
 
 
 .slider-content{
-	padding-left: 80px;
+	padding-left: 50px;
 	padding-right:80px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-box-pack: justify;
+	/*-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-
+*/
 }
 
 .slider-img{
 	position: relative;
 	margin-top:-110px;
+	width: 530px;
 /*	margin-right: 80px;*/
 
 }
@@ -1610,6 +1609,10 @@ input[type="search"]::-webkit-search-results-decoration
 	color:#ffe27f;
 }
 
+
+.slider-checkbox{
+	display: none;
+}
 #service-slider-1{
 	display: none;
 }
@@ -1621,9 +1624,9 @@ input[type="search"]::-webkit-search-results-decoration
 #service-slider-3{
 	display: none;
 }
-#delivery-btn:checked~ .slider-test #service-slider-1,
-#warranty-btn:checked~ .slider-test #service-slider-2,
-#credit-btn:checked~ .slider-test #service-slider-3{
+#delivery-btn:checked~  #service-slider-1,
+#warranty-btn:checked~  #service-slider-2,
+#credit-btn:checked~ #service-slider-3{
 	display: block;
 }
 
