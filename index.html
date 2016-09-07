@@ -267,26 +267,23 @@
 			<!-- <div class="service"> -->
 			
 			<div class="page service-page">
-				<input class="slider-checkbox" type="checkbox" name="tog" id="delivery-btn" >
+				<input class="slider-checkbox" type="checkbox" name="tog" id="delivery-btn" checked>
 				<input class="slider-checkbox" type="checkbox" name="tog" id="warranty-btn">
 				<input class="slider-checkbox" type="checkbox" name="tog" id="credit-btn">
-				<div class="service-design">
+				<div class="service-slide-controler">
 					<label for="delivery-btn" class="service-items service-active"> 
 						доставка
-						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
-							
+						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">	
 						</button>
 					</label>
 					<label for="warranty-btn" class="service-items service-active">
 						гарантия 
-						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
-							
+						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">	
 						</button>
 					</label>
 					<label for="credit-btn" class="service-items  service-active">
 						кредит
-						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">
-							
+						<button  type="button" class="info-links service-active info-links__background service__background-line service__background-size">	
 						</button>
 					</label>
 				</div>
@@ -357,13 +354,12 @@
 					<h2 class="title-h2 title-top-line title-bottom">Контакты</h2>
 					<p class="text text-bottom-indent">Вы можете забрать товар сами, заехав к нам в офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<!-- что использовать для карты? -->
-					<map>
-					<!-- 	<area>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877999!2d37.527429316301564!3d55.687030980535795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1472495003127" width="560" height="223" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</area> -->
-					</map>
-					<button type="button" class="info-links__background contact__background-line contact__background-size write-us"><a href="#" class="info-links info-links__opacity">Напишите нам</a></button>
+					
+					<div class="map">
+						<div id="yandex-map">
+					</div>
+					
+					<button type="button" class="map-indent info-links__background contact__background-line contact__background-size write-us"><a href="#" class="info-links info-links__opacity">Напишите нам</a></button>
 				</section>
 			</div>
 		</div>
@@ -430,27 +426,39 @@
 				<div class="login-fields">
 					<label class="feedback-fields">
 						Ваше имя:<br>
-						<input class="feedback-inputs" type="text" name="login" value="" plceholder="Представьтесь, пожалуйста">
+						<input class="feedback-inputs" type="text" name="login" value="" placeholder="Представьтесь, пожалуйста">
 						</input>
 					</label>
 					<label class="feedback-fields">
 						Ваш e-mail:<br>
-						<input class="feedback-inputs" type="text" name="password" value="" plceholder="Для отправки ответа">
+						<input class="feedback-inputs" type="text" name="password" value="" placeholder="Для отправки ответа">
 						</input>
 					</label>
 				</div>
 				<label class="feedback-textarea">
 					Текст письма:<br>
-					<textarea class="textearea">
-						
+					<textarea placeholder="В свободной форме" class="textearea">	
 					</textarea>
 				</label>
 			</form>
 			<button type="submit" class="info-links__background form__background-size"><a href="#" class="info-links info-links__opacity">отправить</a></button>
 		</div>
+
+		<div class="model-content-map">
+			<button class="btn-close btn-map" type="button" title="закрыть">закрыть</button>
+			<div id="yandex-map-popoup"></div>
+		</div>
+
 		<div class="overlay-model">
 		</div>
+
+
+
+
 		<script src="js/add.js"></script>
+		<script src="js/map.js"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NsUOyaR_xYfbvqX56sTb44IgSS00TAMH&amp;width=560&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NsUOyaR_xYfbvqX56sTb44IgSS00TAMH&amp;width=962&amp;height=559&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map-popoup"></script>
 	</body>
 </html>
 
