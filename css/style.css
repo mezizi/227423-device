@@ -1524,6 +1524,10 @@ input[type="text"]::-webkit-search-results-decoration;{
 	position: relative;
 }
 
+.service-design{
+	margin-top: -15px;
+}
+
 .service::after{
 	content: '';
 	position: absolute;
