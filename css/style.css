@@ -882,7 +882,10 @@ input[type="text"]::-webkit-search-results-decoration;{
 }
 
 .img-content{
+	display: inline-block;
+	vertical-align: top;
 	margin-top: 10px;
+	overflow: hidden;
 }
 
 .features-panel{
@@ -1743,8 +1746,16 @@ input[type="text"]::-webkit-search-results-decoration;{
 	justify-content: space-between;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	overflow: hidden;
 }
 
+.info-aboutus{
+	overflow: hidden;
+}
+
+.info-contacts{
+	overflow: hidden;
+}
 .contact__background-size{
 	width: 260px;
 }
